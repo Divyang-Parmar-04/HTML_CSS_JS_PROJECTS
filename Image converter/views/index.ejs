@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-coverter</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="box">
+        <form action="/upload" method="post" enctype=multipart/form-data>
+            <h2>Upload an Image to convert</h2>
+            <input type="file" name="Image" id="" required>
+            <select name="format" id="">
+                <option value="png">PNG</option>
+                <option value="jpg">JPG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="webp">WEBP</option>
+            </select>
+            <button type="submit">Upload</button>
+        </form>
+         <% if (locals.convertedImage) { %>
+            <img src="../converted/<%= convertedImage %>" alt="convertedImage" width="300">
+            <div><a href="../converted/<%= convertedImage %>"  download><img src="../static/assets/icon.svg" alt=""></a></div>
+        <% } %>
+    </div>
+</body>
+
+</html>
