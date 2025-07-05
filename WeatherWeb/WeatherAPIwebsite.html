@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPI</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="backdrop-filter.css">
+</head>
+
+<body>
+    <div class="leftbox-head">
+        <div class="left-box backdrop-filter ">
+           
+            <div class="closebtn fbtn">
+                <img src="assets/icon/sunny.png" alt="" width="35px">
+            </div>
+            <!-- <h2>Forecast</h2> -->
+            <div class="forcast-container">
+                <div class="daybox" id="0">
+                    <p id="date0"></p>
+                    <img src="" alt="" id="icon0">
+                    <p id="temp0"></p>
+                </div>
+                <div class="daybox" id="1">
+                    <p id="date1"></p>
+                    <img src="" alt="" id="icon1">
+                    <p id="temp1"></p>
+                </div>
+                <div class="daybox" id="2">
+                    <p id="date2"></p>
+                    <img src="" alt="" id="icon2">
+                    <p id="temp2"></p>
+                </div>
+                <div class="daybox" id="3">
+                    <p id="date3"></p>
+                    <img src="" alt="" id="icon3">
+                    <p id="temp3"></p>
+                </div>
+                <div class="daybox" id="4">
+                    <p id="date4"></p>
+                    <img src="" alt="" id="icon4">
+                    <p id="temp4"></p>
+                </div>
+                <div class="daybox" id="5">
+                    <p id="date5"></p>
+                    <img src="" alt="" id="icon5">
+                    <p id="temp5"></p>
+                </div>
+                <div class="daybox" id="6">
+                    <p id="date6"></p>
+                    <img src="" alt="" id="icon6">
+                    <p id="temp6"></p>
+                </div>
+            </div>
+            <!-- <img src="assets/image/wallpaperflare.com_wallpaper (1).jpg" alt="" id="bg" class="backbg"> -->
+        </div>
+    </div>
+    <div class="right-box">
+        <div class="top-box backdrop-filter">
+            <div class="searchbar-btn ">
+                <div class="forecasticon fbtn">
+                    <img src="assets/icon/sunny.png" alt="" width="35px">
+                </div>
+                <div class="skeleton">
+                    <input type="text" id="inp" placeholder="Enter city name">
+                </div>
+                <div class="btn-head ">
+                    <img src="assets/icon/loupe (1).png" alt="" id="btn" class="skeleton">
+                </div>
+                <!-- <button id="btn"></button> -->
+            </div>
+            <div class="hourForcast">
+
+                <div class="hourbox skeleton" id="0">
+                    <p id="htime0"></p>
+                    <img id="himg0" src="" alt="">
+                    <p id="htemp0"></p>
+                </div>
+                <div class="hourbox" id="1">
+                    <p id="htime1"></p>
+                    <img id="himg1" src="" alt="">
+                    <p id="htemp1"></p>
+                </div>
+                <div class="hourbox" id="2">
+                    <p id="htime2"></p>
+                    <img id="himg2" src="" alt="">
+                    <p id="htemp2"></p>
+                </div>
+
+                <div class="hourbox" id="3">
+                    <p id="htime3"></p>
+                    <img id="himg3" src="" alt="">
+                    <p id="htemp3"></p>
+                </div>
+                <div class="hourbox" id="4">
+                    <p id="htime4"></p>
+                    <img id="himg4" src="" alt="">
+                    <p id="htemp4"></p>
+                </div>
+                <div class="hourbox" id="5">
+                    <p id="htime5"></p>
+                    <img id="himg5" src="" alt="">
+                    <p id="htemp5"></p>
+                </div>
+                <div class="hourbox" id="6">
+                    <p id="htime6"></p>
+                    <img id="himg6" src="" alt="">
+                    <p id="htemp6"></p>
+                </div>
+                <div class="hourbox" id="7">
+                    <p id="htime7"></p>
+                    <img id="himg7" src="" alt="">
+                    <p id="htemp7"></p>
+                </div>
+                <div class="hourbox" id="8">
+                    <p id="htime8"></p>
+                    <img id="himg8" src="" alt="">
+                    <p id="htemp8"></p>
+                </div>
+                <div class="hourbox" id="9">
+                    <p id="htime9"></p>
+                    <img id="himg9" src="" alt="">
+                    <p id="htemp9"></p>
+                </div>
+                <div class="hourbox" id="10">
+                    <p id="htime10"></p>
+                    <img id="himg10" src="" alt="">
+                    <p id="htemp10"></p>
+                </div>
+                <div class="hourbox" id="11">
+                    <p id="htime11"></p>
+                    <img id="himg11" src="" alt="">
+                    <p id="htemp11"></p>
+                </div>
+                <div class="hourbox" id="12">
+                    <p id="htime12"></p>
+                    <img id="himg12" src="" alt="">
+                    <p id="htemp12"></p>
+                </div>
+                <div class="hourbox" id="13">
+                    <p id="htime13"></p>
+                    <img id="himg13" src="" alt="">
+                    <p id="htemp13"></p>
+                </div>
+                <div class="hourbox" id="14">
+                    <p id="htime14"></p>
+                    <img id="himg14" src="" alt="">
+                    <p id="htemp14"></p>
+                </div>
+                <div class="hourbox" id="15">
+                    <p id="htime15"></p>
+                    <img id="himg15" src="" alt="">
+                    <p id="htemp15"></p>
+                </div>
+                <div class="hourbox" id="16">
+                    <p id="htime16"></p>
+                    <img id="himg16" src="" alt="">
+                    <p id="htemp16"></p>
+                </div>
+                <div class="hourbox" id="17">
+                    <p id="htime17"></p>
+                    <img id="himg17" src="" alt="">
+                    <p id="htemp17"></p>
+                </div>
+                <div class="hourbox" id="18">
+                    <p id="htime18"></p>
+                    <img id="himg18" src="" alt="">
+                    <p id="htemp18"></p>
+                </div>
+                <div class="hourbox" id="19">
+                    <p id="htime19"></p>
+                    <img id="himg19" src="" alt="">
+                    <p id="htemp19"></p>
+                </div>
+                <div class="hourbox" id="20">
+                    <p id="htime20"></p>
+                    <img id="himg20" src="" alt="">
+                    <p id="htemp20"></p>
+                </div>
+                <div class="hourbox" id="21">
+                    <p id="htime21"></p>
+                    <img id="himg21" src="" alt="">
+                    <p id="htemp21"></p>
+                </div>
+                <div class="hourbox" id="22">
+                    <p id="htime22"></p>
+                    <img id="himg22" src="" alt="">
+                    <p id="htemp22"></p>
+                </div>
+                <div class="hourbox" id="23">
+                    <p id="htime23"></p>
+                    <img id="himg23" src="" alt="">
+                    <p id="htemp23"></p>
+                </div>
+
+            </div>
+            <!-- <img src="assets/image/wallpaperflare.com_wallpaper (1).jpg" alt="" id="bg" class="backbg"> -->
+        </div>
+        <div class="bottom-box backdrop-filter">
+            <div class="moreInfoBox-container">
+                <div class="moreInfo-box">
+                    <img src="assets/icon/arrow-down-01-stroke-rounded.svg" alt="" id="close">
+                    <div class="moreinfo-child">
+                        <div class="info-box1">
+                            <div class="box1-1">
+                                <p class="morepara">Sunrise : <span class="morep" id="1"></span></p>
+                                <p class="morepara">Sunset :<span class="morep" id="2"></span></p>
+                                <p class="morepara">Moonrise :<span class="morep" id="3"></span></p>
+                                <p class="morepara">Moonset :<span class="morep" id="4"></span></p>
+                            </div>
+                            <div class="box1-2">
+                                <p class="morepara">Rain :<span class="morep" id="5"></span></p>
+                                <p class="morepara">Snow :<span class="morep" id="6"></span></p>
+                                <p class="morepara">Temp°C :<span class="morep" id="7"></span></p>
+                                <p class="morepara">Temp°F :<span class="morep" id="8"></span></p>
+                            </div>
+                        </div>
+                        <div class="info-box2">
+                            <div class="canvas-head">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="info-box3">
+                            <div class="box3-1"></div>
+                            <div class="box3-2">
+                                <img src="" alt="" id="morebtnicon">
+                            </div>
+                        </div>
+                        <!-- <div class="info-box4"></div> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="icon-head">
+                <h1 id="cityname" class="skeleton">None</h1>
+                <h3 id="date"></h3>
+                <div class="skeleton cityweatherimg">
+                    <img src="assets/image/student-avatar-illustration-user-profile-icon-youth-avatar_118339-4404.jpg"
+                        alt="" id="icon">
+                </div>
+
+                <div class="temperature ">
+                    <h2 id="text" class=""></h2>
+                    <h1 id="temp-c" class="">°C</h1>
+                    <p id="feels" class="">None</p>
+                </div>
+            </div>
+
+            <div class="weatherBox">
+                <div class="left-weatherBox">
+                    <div class="para">
+                        <p>Humidity </p>
+                        <p>Wind speed</p>
+                        <p>Wind direction</p>
+                    </div>
+                    <div class="info-head">
+                        <p class="info" id="humidity"></p>
+                        <p class="info" id="wind_kph"></p>
+                        <p class="info" id="wind_dir"></p>
+                    </div>
+                </div>
+                <div class="right-weatherBox">
+                    <div class="para">
+                        <p>Region</p>
+                        <p>Counrty</p>
+                        <p>UV Index</p>
+                    </div>
+                    <div class="info-head">
+                        <p class="info" id="region"></p>
+                        <p class="info" id="country"></p>
+                        <p class="info" id="uv"></p>
+                    </div>
+                </div>
+
+            </div>
+            <button id="morebtn">More</button>
+            <!-- <img src="assets/image/wallpaperflare.com_wallpaper (1).jpg" alt="" id="bg" class="backbg"> -->
+        </div>
+
+    </div>
+    <div class="body-img">
+        <img src="assets/image/wallpaperflare.com_wallpaper (1).jpg" alt="" id="bodyimg">
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<Script src="forecastBar.js"></Script>
+
+</html>

@@ -1,0 +1,48 @@
+/* +++++++++++++++++++++ 750px media query ++++++++++++++ */
+@media (max-width:915px) {
+    .canvas-head {
+        /* background-color: wheat; */
+       overflow: auto;
+    }
+}
+@media (max-width:700px) {
+    input {
+        padding-right: 10px;
+    }
+    .info-box1{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:610px) {
+    .forecasticon{
+        display: block;
+    }
+    .leftbox-head {
+        position: absolute;
+        left: -190px;
+        z-index: 100;
+        transition: left 0.5s ;
+        
+    }
+    .left-box{
+        background-color: rgb(106, 102, 102);
+    }
+    .right-box .top-box{
+        width:450px ;
+        /* z-index: -1; */
+    }
+    .right-box .bottom-box{
+        width: 450px;
+        /* z-index: -100; */
+    }
+}
+@media (max-width:450px) {
+    
+     .right-box .top-box{
+        width:400px ;
+    }
+    .right-box .bottom-box{
+        width: 400px;
+    }
+}
