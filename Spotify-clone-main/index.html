@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="uttility.css">
+
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img src="assets/close.svg" alt="">
+            </div>
+            <div class="home bg-gray rounded m-1 p-1">
+                <div class="logo"><img src="assets/logo.svg" alt="" class="invert"></div>
+                <ul>
+                    <li><img src="assets/home.svg" alt="" class="invert">Home</li>
+                    <li><img src="assets/search.svg" alt="" class="invert">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray rounded m-1 p-1">
+                <div class="lib-head">
+                    <div><img src="assets/libraray.svg" alt="" class="invert"></div>
+                    <div class="p">Your Library</div>
+                </div>
+                <div class="songList">
+                    <ul>
+                        <!-- <li>
+                            <img src="assets/music.svg" alt="" class="invert">
+                            <div class="info">
+                                <div>${song.replaceAll("%20", " ")}</div>
+                                <div>
+                                divyang</div>
+                            </div>
+                            <div class="playnow">
+                                <span>playnow</span>
+                                <img src="assets/play.svg" alt="" class="invert ">
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy
+                                Center</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-gray rounded ">
+            <div class="header rounded">
+
+                <div class="nav">
+                    <div class="hamburger-container flex">
+
+                        <img src="assets/hamburger.svg" alt="" class="hamburger ">
+                    
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#ffffff" fill="none">
+                                <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#ffffff" fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="signbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyplaylist">
+                <h2>Spotify Playlist</h2>
+                <div class="card-container">
+                   
+                    <!-- <div data-folder ="Bollywood" class="card ">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+                                <rect width="24" height="24" rx="12" fill="#1ed760" />
+                                <polygon points="10,7 16,12 10,17" fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002e817c9c3493775cecafb2a54" alt="">
+                        <h2>Chill Hits!</h2>
+                        <p>#SpotifyTBT takes you back to the r&amp;b scene of the late 90s.</p>
+                    </div>
+                    <div data-folder ="Hollywood" class="card ">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+                                <rect width="24" height="24" rx="12" fill="#1ed760" />
+                                <polygon points="10,7 16,12 10,17" fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002e817c9c3493775cecafb2a54" alt="">
+                        <h2>Chill Hits!</h2>
+                        <p>#SpotifyTBT takes you back to the r&amp;b scene of the late 90s.</p>
+                    </div> -->
+                    
+                </div>
+            </div>
+            <div class="playbar-head">
+                <div class="playbar">
+
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+
+                        <div class="songplaybuttons">
+                            <img id="prev" src="assets/backward.svg" alt="" class="invert">
+                            <img id="play" src="assets/play.svg" alt="" class="invert">
+                            <img id="next" src="assets/forward.svg" alt="" class="invert">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img id ="volimg" src="assets/Volume.svg" alt="">
+                                  <div class="range">
+                                    <input type="range" name="volume">
+                                  </div>      
+                            </div> 
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            border: 2px solid black;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+        }
+
+        .box {
+            /* height: 300px; */
+            width: 300px;
+            border: 2px solid black;
+            background-color: gray;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+            /* z-index: -1; */
+        }
+
+        .box::after, .box::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            /* background: red; */
+            background-image: conic-gradient(red,green,blue,red,green,blue,red);
+            
+            z-index: -1;
+            padding: 6px;
+            border-radius: 10px;
+        }
+        .box::before{
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="box">
+            <h3>this is box</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, dolor Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Corrupti hic consectetur ratione dolores omnis minus distinctio culpa
+                obcaecati error voluptates animi tempora sequi odio, necessitatibus, asperiores eveniet praesentium
+                commodi itaque voluptatibus, voluptatum accusamus autem quas esse pariatur! Maxime, rem itaque!</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

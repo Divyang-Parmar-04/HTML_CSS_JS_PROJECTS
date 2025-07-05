@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .head {
+            /* display: flex; */
+            border-radius: 30px;
+            padding: 10px;
+            /* display: flex; */
+            /* border: 2px solid red; */
+            width: 492px;
+            /* background-image: linear-gradient(to bottom,rgb(243, 103, 11),rgb(224, 220, 220),rgb(14, 203, 45)); */
+            position: relative;
+            background-color: rgb(60, 98, 104);
+        }
+
+        .display {
+            border-radius: 50px;
+            display: flex;
+            border: 1px solid black;
+            /* border-top: 1px solid green; */
+            height: 100px;
+            /* margin:10px 10px 10px 10px; */
+            margin: 10px 10px;
+            background-color: white;
+            position: relative;
+            /* color: white; */
+            /* animation: spin 1s linear infinite ; */
+        }
+
+        @keyframes spin {
+            0% {
+                border-top: 5px solid red;
+            }
+
+            25% {
+                border-right: 5px solid green;
+            }
+
+            50% {
+                border-bottom: 5px solid blue;
+            }
+
+            75% {
+                border-left: 5px solid red;
+            }
+
+            100% {
+                border-top: 5px solid green;
+            }
+        }
+
+        .buttons {
+            border-radius: 50px;
+            margin-top: 10px;
+            /* border: 1px solid black; */
+            /* height: 400px; */
+            padding: 10px 20px;
+            /* position: relative; */
+        }
+
+        .buttons button {
+            /* position: absolute; */
+            width: 100px;
+            padding: 30px 30px;
+            margin: 5px;
+            background-color: white;
+            border: none;
+            border: 1px solid black;
+            /* color: white; */
+            border-radius: 50px;
+            /* box-shadow: -1px 1px 1px; */
+            /* object-fit: contain; */
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .child {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            /* color: green; */
+            font-size: 50px;
+        }
+
+        .bomb {
+            height: 100px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            background-color: red;
+        }
+        .event{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            font-size: 50px;
+            background-color: orange;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="display">
+            <div class="child"></div>
+        </div>
+        <div class="buttons">
+            <button>C</button>
+            <button>%</button>
+            <button>X</button>
+            <button>*</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+        </div>
+    </div>
+    <!-- <div class="bomb"></div>
+    <div class="event"></div> -->
+</body>
+<script>
+    // let a = 10
+    // let time = new Date()
+    // time.setSeconds(a)
+    // time.setMinutes(0)
+    // let bomb = document.querySelector(".bomb")
+    // let interval = setInterval(() => {
+    //     if (a >= -1) {
+    //         // console.log(`${time.getMinutes()} : ${time.getSeconds()}`);
+    //         bomb.innerHTML = `${time.getMinutes()} : ${time.getSeconds()}`
+    //         time.setSeconds(a--)
+    //     }
+    //     else {
+    //         let event = document.querySelector(".event")
+    //         event.innerHTML = `<p>Time is Over</p>`
+    //         clearInterval(interval)
+    //         document.body.style.backgroundColor = "red"
+    //     }
+
+    // }, 1000);
+
+    let btn = document.querySelector(".buttons")
+    btn.addEventListener("click", function (e) {
+        console.log(e.target)
+
+        let input = e.target.innerHTML
+
+        let child = document.querySelector('.child')
+
+        if (input == "C") {
+            child.innerHTML = ""
+        }
+        else if (input == "=") {
+            child.innerHTML = eval(child.innerHTML)
+        }
+        else {
+            child.innerHTML += input
+        }
+    })
+</script>
+
+</html>
